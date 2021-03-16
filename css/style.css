@@ -1,0 +1,30 @@
+/* /////// Navegación ////// */
+
+.navbar {
+    padding: 0;
+}
+
+.nav-item {
+    padding: 15px;
+    background-color: #00025f;
+}
+
+.nav-item a{
+    color: #ffffff !important;
+}
+
+.dropdown-menu a {
+    color: #000000 !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: #c0c0c0;
+}
+
+.carousel-control-next {
+    background-color: #7575757e;
+}
+
+.carousel-control-prev {
+    background-color: #7575757e;
+}
