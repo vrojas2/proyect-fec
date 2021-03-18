@@ -31,9 +31,13 @@ body::-webkit-scrollbar-track:active {
 
 
 body {
-    background-color: #FCFCFC;
+    /* background-color: #FCFCFC; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
-
+.title {
+    font-family: Impact;
+    font-size: 2rem;
+}
 .carousel-control-prev:hover{
     background-color: rgba(0, 0, 0, 0.2)
 }
@@ -43,5 +47,12 @@ body {
 
 .container.main {
     background-color: white;
+}
+
+.redes {
+    height: 30px;
+}
+a {
+    color: black;
 }
 
