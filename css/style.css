@@ -59,3 +59,15 @@ a {
     color: #337ab7;
 }
 
+.navbar-nav li {
+    margin-right: 15px;
+}
+
+.navbar {
+    background-color: #0011ac
+    ;
+}
+
+.dropdown-item:hover {
+    background-color: #c4c4c4;
+}
