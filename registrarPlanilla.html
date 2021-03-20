@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand title" href="index.html">FEC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Biblioteca</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Credencial
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="credencial.html">Credencial FEC</a>
+                            <!-- <a class="dropdown-item" href="registro.html">Registro</a> -->
+                            <a class="dropdown-item" href="#">Convenio</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Becas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/becasFormatos.html">Formatos</a>
+                            <a class="dropdown-item" href="becasConvocatorias.html">Convocatorias</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Representación estudiantil
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="registroPlanilla.html">Registro de planilla</a>
+                            <a class="dropdown-item" href="escuelaCuadros.html">Escuela de cuadros</a>
+                            <a class="dropdown-item" href="#">Plan de trabajo</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container main mt-5 ">
+            <div class="jumbotron text-center">
+                <h1>Registro para planillas FEC</h1>
+                <div>
+                    <hr class="my-4">
+                    <p class="text-danger">Importante</p>
+                    <p>Los campos marcados con un <strong>*</strong> son <strong>obligatorios.</strong>.</p>
+                </div>
+            </div>
+
+            <div class="card bg-light mb-3 w-100">
+                <div class="card-body">
+                    <div class="card-header text-center">
+                        <h6>Datos personales</h6>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nombre<strong>*</strong></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Apellido Paterno<strong>*</strong></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Apellido Paterno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Apellido materno<strong>*</strong></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Apellido materno">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Sexo<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>MASCULINO</option>
+                                <option>FEMENINO</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Fecha de nacimiento<strong>*</strong></label>
+                            <input type="date" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CURP<strong>*</strong></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="CURP">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Télefono<strong>*</strong></label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1"
+                                placeholder="10 dígitos">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Celular<strong>*</strong></label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1"
+                                placeholder="10 dígitosm">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Dirección<strong>*</strong></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Dirección">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Colonia<strong>*</strong></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Colonia">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Municipio<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>ARMERIA</option>
+                                <option>COLIMA</option>
+                                <option>COMALA</option>
+                                <option>COQUIMATLAN</option>
+                                <option>CUAUHTEMOC</option>
+                                <option>IXTLAHUACAN</option>
+                                <option>MANZANILLO</option>
+                                <option>MINATITLAN</option>
+                                <option>TECOMAN</option>
+                                <option>VILLA DE ALVAREZ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Correo electrónico<strong>*</strong></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Correo electrónico">
+                        </div>
+                        <div class="card-header text-center">
+                            <h6>Datos escolares</h6>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Delegación<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>ARMERIA</option>
+                                <option>COLIMA</option>
+                                <option>COMALA</option>
+                                <option>COQUIMATLAN</option>
+                                <option>CUAUHTEMOC</option>
+                                <option>IXTLAHUACAN</option>
+                                <option>MANZANILLO</option>
+                                <option>MINATITLAN</option>
+                                <option>TECOMAN</option>
+                                <option>VILLA DE ALVAREZ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Escuela<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>SIN INFORMACION</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Nivel escolar<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>DIPLOMADO</option>
+                                <option>LICENCIATURA</option>
+                                <option>POSGRADO</option>
+                                <option>PREPARATORIA</option>
+                                <option>SECUNDARIA</option>
+                                <option>PRIMARIA</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Grado<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>AÑO</option>
+                                <option>BIMESTRE</option>
+                                <option>CUATRIMESTRE</option>
+                                <option>MODULO</option>
+                                <option>NIVEL</option>
+                                <option>SEMESTRE</option>
+                                <option>TETRAMESTRE</option>
+                                <option>TRIMESTRE</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Grupo</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Grupo">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cuenta</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Cuenta">
+                        </div>
+                        <div class="card-header text-center">
+                            <h6>Datos de la planilla</h6>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nombre de la planilla</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Nombre de la planilla">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Cargo<strong>*</strong></label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>PRESIDENCIA</option>
+                                <option>VICEPRESIDENCIA</option>
+                                <option>SECRETARIA GENERAL</option>
+                                <option>SECRETARIA DE TRABAJOS Y CONFLICTOS</option>
+                                <option>SECRETARIA DE BIENESTAR Y ASISTENCIA SOCIAL</option>
+                                <option>SECRETARIA DE ORGANIZACION</option>
+                                <option>SECRETARIA DE ADMINISTRACION Y FINANZAS</option>
+                                <option>SECRETARIA DE PROMOCION CULTURAL</option>
+                                <option>SECRETARIA DE DEPORTE</option>
+                                <option>SECRETARIA DE LA MUJER Y DIVERSIDAD JUVENIL</option>
+                                <option>SECRETARIA DE COMUNICACION SOCIAL</option>
+                                <option>SECRETARIA DE MEDIO AMBIENTE</option>
+                                <option>SECRETARIA DE ACCION POLITICA Y CULTURA DEMOCRATICA</option>
+                                <option>SECRETARIA DE ASUNTOS ESTUDIANTILES</option>
+                                <option>COLABORADOR</option>
+                            </select>
+                        </div>
+                        <div class="card-header text-center">
+                            <h6>Aviso de privacidad de la federación de estudiantes colimenses</h6>
+                        </div>
+                        <div class="avisoPrivacidad">
+                            <p>
+                                La Federación de Estudiantes Colimenses, con domicilio ubicado en Av. Gonzalo de
+                                Sandoval No. 400, Colonia Las Víboras, Colima, Col. C.P. 28040, al tiempo de recabar tus
+                                datos personales, es responsable del uso y la protección que se les dé a los mismos.
+                            </p>
+                            <p>
+                                En cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los
+                                Particulares (LFDPPP), dentro de los artículos 8,15,16,36 de esta ley; nuestra
+                                institución pone a tu disposición el siguiente <strong>aviso de privacidad</strong> el
+                                cual como usuario
+                                de nuestros servicios institucionales debes consentir o rechazar para el manejo de la
+                                información que se requiere.
+                            </p>
+                            <p>
+                                Tendrá la calidad de usuario cualquier persona que esta Institución considere como
+                                militante por pertenecer al gremio estudiantil, ya sea para su participación activa en
+                                los diversos programas comunitarios, deportivos o académicos en que incursione la
+                                Federación de Estudiantes Colimenses, así como para la adquisición de los diferentes
+                                beneficios y servicios que otorga la institución a su militancia.
+                            </p>
+                            <p>
+                                El presente aviso de privacidad aplica para cualquier información, datos personales y/o
+                                sensibles que hayan sido transferidos a la Federación de Estudiantes Colimenses para la
+                                ejecución de todos los servicios que ofrece. Comprometiéndose a que la información que
+                                sea tratada será única y exclusivamente para los servicios especificados así como estará
+                                bajo las más estrictas medidas de seguridad que garanticen su confidencialidad.
+                            </p>
+                            <p>
+                                Aceptando que de consentir dicho aviso de privacidad la Federación de Estudiantes
+                                Colimenses, está facultada para la recopilación, uso, y almacenamiento de información
+                                personal tal y como se establece en el presente documento. Siendo que la Federación de
+                                Estudiantes Colimenses únicamente utilizará los datos que se obtengan por ella misma
+                                para usos exclusivamente relacionados a la institución y a los servicios que la
+                                caracterizan.
+                            </p>
+                            <p>La Federación de Estudiantes Colimenses, recaba y utiliza para otorgar sus diversos
+                                servicios los datos que de manera enunciativa más no limitativa a continuación se
+                                enlistan:</p>
+                            <ol>
+                                <li>Uso del sitio y sus servicios.</li>
+                                <li>Envío de publicidad selectiva, cursos, seminarios, concursos, campañas.</li>
+                                <li>Solicitud de becas</li>
+                                <li>Acreditación cultural y deportiva.</li>
+                                <li>Acreditación de servicio social interno.</li>
+                                <li>Programas estudiantiles.</li>
+                                <li>Asuntos estudiantiles.</li>
+                                <li>Prácticas profesionales.</li>
+                            </ol>
+                            <p>
+                                Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar tus
+                                datos personales de distintas formas:
+                            </p>
+                            <ol>
+                                <li>Cuando tú nos los proporcionas directamente.</li>
+                                <li>Cuando visitas nuestro sitio de Internet o utilizas nuestros servicios en línea.
+                                </li>
+                                <li> Cuando obtenemos información a través de otras fuentes que están permitidas por la
+                                    ley.</li>
+                            </ol>
+                            <p>
+                                La Federación de Estudiantes Colimenses no divulga ni comparte la información a la que
+                                se hace acreedora, salvo que;
+                            </p>
+                            <ol>
+                                <li>El usuario preste la autorización expresa.</li>
+                                <li>La Federación de Estudiantes Colimenses considere que la información es necesaria
+                                    para llevar a cabo un proceso legal, identificación o comunicación con el usuario.
+                                </li>
+                                <li>Requerimiento judicial o administrativo..</li>
+                                <li>Sean necesarios para proteger los intereses jurídicamente tutelados por el titular.
+                                </li>
+                                <li>Sean objeto de tratamiento para la prevención o el diagnóstico médico o la gestión
+                                    de servicios de salud, siempre que dicho tratamiento se realice por un profesional
+                                    de salud sujeto a un deber de secreto.</li>
+                                <li>Cualquier otra disposición que marque la LFDPPP.</li>
+                            </ol>
+                            <p>
+                                Así mismo la Federación de Estudiantes Colimenses podrá negar el acceso a los datos
+                                personales, y a los derechos en los supuestos marcados con los numerales 5,6,7,8, y
+                                todos los demás que se señalen en la LFDPPP.
+                            </p>
+                            <p>
+                                De esta forma, el usuario reconoce que los datos que introduzca y/o proporcione en el
+                                sitio, son verdaderos y fehacientes, y en caso de que no quisiera proporcionar los
+                                datos, deberá dejar de usarlo. Asimismo el usuario se compromete a ser cauteloso con la
+                                información que proporcione, deslindando a la FEDERACIÓN DE ESTUDIANTES COLIMENSES de
+                                las políticas de privacidad de terceros proveedores de servicios y/o productos.
+                            </p>
+                            <p>
+                                La FEDERACIÓN DE ESTUDIANTES COLIMENSES cumple los principios de protección de datos
+                                personales establecidos por la Ley Federal de Protección de Datos Personales en Posesión
+                                de los Particulares y adopta las medidas necesarias para su aplicación. Este sitio web
+                                contiene enlaces a otros sitios web de redes asociadas, filiales o terceros, si usted
+                                accede a un hipervínculo de esos sitios web, tenga en cuenta que estos pueden tener sus
+                                propias políticas de privacidad y que la FEDERACIÓN DE ESTUDIANTES COLIMENSES no acepta
+                                ninguna responsabilidad derivada de las mismas, se recomienda que revise dichas
+                                políticas antes de enviar cualquier información personal a esos sitios web. La inclusión
+                                de cualquier vínculo a otros sitios web, no implica la aprobación o adhesión por parte
+                                de La FEDERACIÓN DE ESTUDIANTES COLIMENSES a esas páginas o su contenido.
+                            </p>
+                            <p>
+                                En caso de que usted no consintió la recopilación de datos a los que se hizo referencia,
+                                tienes derecho a acceder a los datos personales que poseemos dentro de la FEDERACIÓN DE
+                                ESTUDIANTES COLIMENSES y los detalles del tratamiento del mismo, así como rectificarlos
+                                en el caso que sean incorrectos o incompletos, cancelarlos cuando considere que no se
+                                requieren para las finalidades señaladas, o que estén siendo utilizadas para finalidades
+                                no consentidas o haya finalizado su relación con la FEDERACIÓN DE ESTUDIANTES COLIMENSES
+                                o bien oponerse al tratamiento de los mismos para fines específicos. La revocación puede
+                                efectuarse en cualquier momento, sin que se atribuyan efectos retroactivos.
+                            </p>
+                            <p>
+                                De manera que las partes reconoces que los datos personales del usuario están sujetos a
+                                copias de seguridad y a registro de datos eliminados por lo que la supresión total de
+                                los datos personales no es del todo posible por distintas legislaciones a las que la
+                                FEDERACIÓN DE ESTUDIANTES COLIMENSES es sujeto.
+                            </p>
+                            <p>
+                                El usuario se compromete a actualizar sus datos personales siempre que estos sean
+                                modificados a fin de que la FEDERACIÓN DE ESTUDIANTES COLIMENSES pueda brindarle el
+                                servicio en condiciones de su eficiencia, eficacia y personalización.
+                            </p>
+                            <p>
+                                En todo momento el estudiante podrá revocar el consentimiento que nos ha otorgado para
+                                el tratamiento de sus datos personales, a fin de que dejemos de hacer uso de los mismos.
+                            </p>
+                            <p>
+                                Los derechos ARCO pueden ser ejercidos mediante el contacto vía correo electrónico al
+                                correo: presidencia.fec.colima@gmail.com o bien con el encargado de la oficina de
+                                privacidad de la FEDERACIÓN DE ESTUDIANTES COLIMENSES en el mismo domicilio de la
+                                Institución
+                            </p>
+                            <p>
+                                Los derechos mencionados "DERECHOS ARCO" pueden ser ejercidos a través de la
+                                presentación de la solicitud, dicha solicitud en cuestión deberá contener y acompañar lo
+                                siguiente:
+                            </p>
+                            <ol>
+                                <li>El nombre del titular y domicilio u otro medio para comunicarle la respuesta a su
+                                    solicitud.</li>
+                                <li>Los documentos que acrediten la identidad o, en su caso, la representación legal del
+                                    titular.</li>
+                                <li>La descripción clara y precisa de los datos personales respecto de los que se busca
+                                    ejercer alguno de los derechos antes mencionados.</li>
+                                <li>Cualquier otro elemento o documento que facilite la localización de los datos
+                                    personales.</li>
+                                <li>Para el caso de las solicitudes de rectificación el titular deberá indicar las
+                                    modificaciones a realizarse y aportar la documentación que sustente su petición.
+                                </li>
+                            </ol>
+                            <p>
+                                La FEDERACIÓN DE ESTUDIANTES COLIMENSES, a través de la oficina de privacidad,
+                                comunicará al titular, a más tardar, en veinte días hábiles, contados desde la fecha en
+                                que se recibió la solicitud de acceso, rectificación, cancelación u oposición, la
+                                determinación adoptada a efecto de que, si resulta procedente, se haga efectiva la misma
+                                dentro de los quince días siguientes a la fecha en que se comunica la respuesta.
+                                Tratándose de solicitudes de acceso a datos personales, procederá la entrega, previa
+                                acreditación de la identidad del solicitante o representante legal, según corresponda.
+                                Los plazos, antes referidos, podrán ser ampliados las veces que sean necesarias por un
+                                periodo igual; siempre y cuando, así lo justifiquen las circunstancias del caso.
+                            </p>
+                            <p>
+                                La obligación, de acceso a la información, se dará por cumplida cuando se pongan a
+                                disposición del titular los datos personales; o bien, mediante la expedición de copias
+                                simples, documentos electrónicos o cualquier otro medio que la FEDERACIÓN DE ESTUDIANTES
+                                COLIMENSES provea al titular.
+                            </p>
+                            <p>
+                                La FEDERACIÓN DE ESTUDIANTES COLIMENSES podrá negar el acceso a los datos personales, la
+                                rectificación, cancelación o concesión de la oposición al tratamiento de los mismos, en
+                                los siguientes supuestos:
+                            </p>
+                            <ol>
+                                <li>Cuando el solicitante no sea el titular de los datos personales, o el representante
+                                    legal no esté debidamente acreditado para ello.</li>
+                                <li>Cuando en su base de datos no se encuentren los datos personales del solicitante.
+                                </li>
+                                <li>Cuando se lesionen los derechos de un tercero.</li>
+                                <li>Cuando exista un impedimento legal, o la resolución de una autoridad competente que
+                                    restrinja el acceso a los datos personales o que no permita la rectificación,
+                                    cancelación u oposición de los mismos</li>
+                                <li>Cuando la rectificación, cancelación u oposición haya sido previamente realizada.
+                                </li>
+                            </ol>
+                            <p>
+                                La FEDERACIÓN DE ESTUDIANTES COLIMENSES limitará el uso de los datos personales a
+                                petición expresa del titular, y no estará obligada a cancelar los datos personales
+                                cuando:
+                            </p>
+                            <ol>
+                                <li>Deban ser tratados por disposición legal.</li>
+                                <li>Se refiera a las partes de un contrato privado, social o administrativo, y sean
+                                    necesarios para su desarrollo y cumplimiento.</li>
+                                <li>Obstaculice actuaciones judiciales o administrativas vinculadas a obligaciones
+                                    fiscales, la investigación y persecución de delitos, o la actualización de sanciones
+                                    administrativas.</li>
+                                <li>Sean necesarios para proteger los intereses jurídicamente tutelados del titular</li>
+                                <li>Sean necesarios para realizar una acción en función del interés público.</li>
+                                <li>Sean necesarios para cumplir con una obligación legalmente adquirida por el titular.
+                                </li>
+                                <li>Sean objeto de tratamiento para la prevención o el diagnóstico médico o la gestión
+                                    de servicios de salud; siempre que dicho tratamiento se realice por un profesional
+                                    de la salud sujeto a un deber de secreto.</li>
+                            </ol>
+                            <p>
+                                La FEDERACIÓN DE ESTUDIANTES COLIMENSES puede modificar, revisar o hacer cambios en el
+                                presente aviso en cualquier momento, atendiendo las solicitudes, viables y aceptadas o
+                                conforme al a normatividad. En caso de cambios dentro del presente aviso se publicarán a
+                                través de los siguientes medios: Anuncios visibles en nuestra institución, en nuestra
+                                página de Internet [www.federaciondeestudiantescolimenses.com].
+                            </p>
+                            <p>Encargado de la oficina de privacidad:</p>
+                            <p>Domicilio: Av. Gonzalo de Sandoval No. 400 colonia las Víboras en Colima Colima. Correo
+                                electrónico: presidencia.fec.colima@gmail.com Teléfono: 312 31 6 11 4 3 </p>
+                        </div>
+                        <div class="input-group mt-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                            <p class="form-control">He leído y acepto la política de privacidad de la Federación de
+                                Estudiantes Colimenses.</p>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button type="submit" class="btn btn-primary">Continuar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="card text-center bg-light mt-5">
+            <div class="card-body">
+                <div class="enlaces">
+                    <a href="#">
+                        <h6 class="card-text">Arte y Cultura</h6>
+                    </a>
+                    <a href="#">
+                        <h6 class="card-text">Siceuc</h6>
+                    </a>
+                    <a href="#">
+                        <h6 class="card-text">Contacto</h6>
+                    </a>
+                </div>
+                <div class="mt-3">
+                    <img class="redes" src="/img/instagram.png" alt="">
+                    <img class="redes" src="/img/facebook.png" alt="">
+                </div>
+                <p class="card-text mt-3">Federación de Estudiantes Colimenses 2017-2021</p>
+                <div class="text-muted">
+                    <p>La Federación de Estudiantes Colimenses, utilizará sus datos personales aquí recabados para tener
+                        los medios suficientes de comunicación y contacto con nuestros afiliados así como para coadyuvar
+                        con las acciones realizadas por nuestra institución.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
