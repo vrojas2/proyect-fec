@@ -46,8 +46,8 @@
                             Becas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Formatos</a>
-                            <a class="dropdown-item" href="#">Convocatorias</a>
+                            <a class="dropdown-item" href="/becasFormatos.html">Formatos</a>
+                            <a class="dropdown-item" href="/becasConvocatorias.html">Convocatorias</a>
 
                         </div>
                     </li>
@@ -57,8 +57,8 @@
                             Representación estudiantil
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Registro de planilla</a>
-                            <a class="dropdown-item" href="#">Escuela de cuadros</a>
+                            <a class="dropdown-item" href="registroPlanilla.html">Registro de planilla</a>
+                            <a class="dropdown-item" href="escuelaCuadros.html">Escuela de cuadros</a>
                             <a class="dropdown-item" href="#">Plan de trabajo</a>
                         </div>
                     </li>
@@ -74,42 +74,119 @@
                 <div class="col-sm-4">
                     <div class="card w-100 mt-5">
                         <div class="card-header">
-                            <h5 class="card-title">Formato de solicitud de beca alimenticia</h5>
+                            <!-- h5 necesita de un id para la db -->
+                            <h5 class="card-title">Formatos de solicitud de beca</h5>
                         </div>
                         <div class="card-body text-center">
-                            <img class="card-img-bottom" src="/img/Formato de solicitud de beca alimenticia.PNG"
-                                alt="Card image cap">
+                            <img class="card-img-bottom mb-2 p-3" src="/img/icono_pdf.png" alt="PDF" data-toggle="modal"
+                                data-target="#exampleModalCenter"> <!-- data-target="#exampleModalCenter" necesita de un id para la db -->
+                            <!-- a href necesita de un id para la db, mismo link de pdf-->
                             <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca_alimenticia.pdf"
                                 class="btn btn-success mt-1">Descargar</a>
                         </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <!-- iframe src necesita de un id para la db, mismo link de pdf-->
+                                        <iframe
+                                            src="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca_alimenticia.pdf"
+                                            class=" w-100" alt="Card image cap" frameborder="0"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mt-1"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <!-- a href necesita de un id para la db, mismo link de pdf -->
+                                        <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca_alimenticia.pdf"
+                                            class="btn btn-success mt-1">Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class="card w-100 mt-5">
                         <div class="card-header">
                             <h5 class="card-title">Formato de solicitud de becas</h5>
                         </div>
                         <div class="card-body text-center">
-                            <img class="card-img-bottom mb-3" src="/img/formato_solicitud_beca1.PNG"
-                                alt="Card image cap">
+                            <img class="card-img-bottom mb-2 p-3" src="/img/icono_pdf.png" alt="PDF" data-toggle="modal"
+                                data-target="#exampleModalCenter">
                             <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca.pdf"
                                 class="btn btn-success mt-1">Descargar</a>
                         </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe
+                                            src="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca.pdf"
+                                            class=" w-100" alt="Card image cap" frameborder="0"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mt-1"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca.pdf"
+                                            class="btn btn-success mt-1">Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class="card w-100 mt-5">
                         <div class="card-header">
                             <h5 class="card-title">Estudio socioeconomico</h5>
                         </div>
                         <div class="card-body text-center">
-                            <img class="card-img-bottom" src="/img/ESTUDIO_SOCIOECONÓMIO1.PNG" alt="Card image cap">
+                            <img class="card-img-bottom mb-2 p-3" src="/img/icono_pdf.png" alt="PDF" data-toggle="modal"
+                                data-target="#exampleModalCenter">
                             <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/ESTUDIO_SOCIOECONÓMIO.pdf"
                                 class="btn btn-success mt-1">Descargar</a>
+                        </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe
+                                            src="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/ESTUDIO_SOCIOECONÓMIO.pdf"
+                                            class=" w-100" alt="Card image cap" frameborder="0"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mt-1"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/ESTUDIO_SOCIOECONÓMIO.pdf"
+                                            class="btn btn-success mt-1">Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <h2 class="mt-5 text-center">Formatos casa estudiantil</h2>
             <div class="row">
                 <div class="col-sm-4">
@@ -118,34 +195,107 @@
                             <h5 class="card-title">Lineamientos</h5>
                         </div>
                         <div class="card-body text-center">
-                            <img class="card-img-bottom mb-3" src="/img/lineamientos.PNG" alt="Card image cap">
+                            <img class="card-img-bottom mb-2 p-3" src="/img/icono_pdf.png" alt="PDF" data-toggle="modal"
+                                data-target="#exampleModalCenter">
                             <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/casa_estudiantil.jpeg"
                                 class="btn btn-success mt-1">Descargar</a>
                         </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe
+                                            src="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/casa_estudiantil.jpeg"
+                                            class=" w-100" alt="Card image cap" frameborder="0"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mt-1"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/casa_estudiantil.jpeg"
+                                            class="btn btn-success mt-1">Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class="card w-100 mt-5">
                         <div class="card-header">
                             <h5 class="card-title">Formato de solicitud de becas</h5>
                         </div>
                         <div class="card-body text-center">
-                            <img class="card-img-bottom mb-3" src="/img/formato_solicitud_beca2.PNG"
-                                alt="Card image cap">
+                            <img class="card-img-bottom mb-2 p-3" src="/img/icono_pdf.png" alt="PDF" data-toggle="modal"
+                                data-target="#exampleModalCenter">
                             <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca.pdf"
                                 class="btn btn-success mt-1">Descargar</a>
                         </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe
+                                            src="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca.pdf"
+                                            class=" w-100" alt="Card image cap" frameborder="0"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mt-1"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca.pdf"
+                                            class="btn btn-success mt-1">Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-sm-4">
                     <div class="card w-100 mt-5">
                         <div class="card-header">
                             <h5 class="card-title">Estudio socioeconomico</h5>
                         </div>
                         <div class="card-body text-center">
-                            <img class="card-img-bottom" src="/img/ESTUDIO_SOCIOECONÓMIO2.PNG" alt="Card image cap">
-                            <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/ESTUDIO_SOCIOECONÓMIO.pdf"
+                            <img class="card-img-bottom mb-2 p-3" src="/img/icono_pdf.png" alt="PDF" data-toggle="modal"
+                                data-target="#exampleModalCenter">
+                            <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/casa_estudiantil.jpeg"
                                 class="btn btn-success mt-1">Descargar</a>
+                        </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <iframe
+                                            src="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/ESTUDIO_SOCIOECONÓMIO.pdf"
+                                            class=" w-100" alt="Card image cap" frameborder="0"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary mt-1"
+                                            data-dismiss="modal">Cerrar</button>
+                                        <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/ESTUDIO_SOCIOECONÓMIO.pdf"
+                                            class="btn btn-success mt-1">Descargar</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
