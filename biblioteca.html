@@ -83,17 +83,20 @@
                 <div class="col-sm-4">
                     <div class="card w-100 mt-5">
                         <div class="card-header">
-                            <!-- h5 necesita de un id para la db -->
+                            <!-- h5 necesita de un id para la db /// titulo del pdf para biblio -->
                             <h5 class="card-title">Título</h5>
                         </div>
                         <div class="card-body text-center">
+            <!-- para que modal funcione, data-target="#modall" de ".card-body img" = id="Modal1" de (div class="modal fade") -->
                             <img class="card-img-bottom mb-2 p-3" src="/img/icono_pdf.png" alt="PDF" data-toggle="modal"
-                                data-target="#exampleModalCenter"> <!-- data-target="#exampleModalCenter" necesita de un id para la db -->
+                                data-target="#modal1"> <!-- data-target="#exampleModalCenter" necesita de un id para la db -->
                             <!-- a href necesita de un id para la db, mismo link de pdf-->
                             <a href="http://federaciondeestudiantescolimenses.com/application/libraries/docs/descargas/formato_solicitud_beca_alimenticia.pdf"
                                 class="btn btn-success mt-1">Descargar</a>
                         </div>
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+
+            <!-- para que modal funcione, data-target="#modall" de ".card-body img" = id="Modal1" de (div class="modal fade") -->
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
