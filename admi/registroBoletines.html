@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand title" href="index.html">FEC</a>
+            <a class="navbar-brand title" href="inicio.html">FEC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -34,23 +34,37 @@
 
     <div class="container main mt-5">
         <main>
-            <h1 class="text-center">Inicio de sesión para administradores</h1>
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Cuenta</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+            <div class="card bg-light mb-3 w-100">
+                <div class="card-body">
+                    <div class="card-header text-center">
+                        <h6>Boletines</h6>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">ID</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Título</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Título">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Descripción</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Título">
+                        </div>
+                        <label for="exampleFormControlInput1">Archivo</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Subir archivo</label>
+                          </div>
+                        <div class="text-center mt-3">
+                            <a href="boletines.html" class="btn btn-primary">Guardar</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Contraseña">
-                </div>
-                <div class="text-center">
-                    <a class="btn btn-primary" href="inicio.html">Entrar</a>
-                </div>
-                
-            </form>
+            </div>
         </main>
     </div>
 
