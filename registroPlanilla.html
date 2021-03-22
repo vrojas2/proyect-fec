@@ -70,8 +70,9 @@
             <div class="row">
                 <div class="col-sm-7">
                     <h2 class="text-center">Boletines</h2>
-                    <p class="mt-5">Selecciona un año</p>
-                    <form>
+                    <a href="registrarPlanilla.html" class="btn btn-primary mt-5">Registrar planilla</a>
+                    <p class="mt-4">Selecciona un año</p>
+                    <form class="mb-4">
                         <select class="form-control form-control-sm">
                             <option>2021</option>
                             <option>2020</option>
@@ -79,8 +80,9 @@
                     </form>
 
                     <div id="accordion">
-                        <div class="card mt-4">
-                            <div class="card-header" id="headingOne">
+
+                        <div class="card">
+                            <div class="card-header" id="headingEnero">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
@@ -88,73 +90,308 @@
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingEnero"
                                 data-parent="#accordion">
                                 <div class=" row card-body">
+
+                                    <!-- card que solo muestra img en modal-->
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="card w-100">
                                             <div class="card-header">
-                                                <h6 class="card-title text-center"> Concluye FEC el programa "Escuela de Líderes"</h6>
+                                                <!-- h6 necesita de un id para la db-->
+                                                <h6 class="card-title text-center">
+                                                    Brigadas FEC Colima
+                                                </h6>
                                             </div>
                                             <div class="card-body">
-                                                <a href="http://federaciondeestudiantescolimenses.com/notas/id/11">
-                                                    <img class="card-img-bottom mb-2 img-thumbnail" alt="Card image cap"
-                                                        src="http://federaciondeestudiantescolimenses.com/application/libraries/images/notas/thumbs/111.jpg">
-                                                </a>
+                                                <!-- para que modal funcione, data-target="#modall" de ".card-body img" = id="Modal1" de (div class="modal fade") -->
+                                                <!-- img neceitad id para la db de su dirececion-->
+                                                <img class="card-img-bottom mb-2 img-thumbnail" alt="Card image cap"
+                                                    src="http://federaciondeestudiantescolimenses.com/application/libraries/images/actividades/marzo/real/brigadasColima.jpg"
+                                                    data-toggle="modal" data-target="#modal1">
                                                 <p class="text-secondary">
-                                                    El pasado sábado concluyó la "Escuela de Líderes" de la Federación de Estudiantes Colimenses...(
-                                                    <a class="text-info" href="http://federaciondeestudiantescolimenses.com/notas/id/11">Leer más</a>)
+                                                    Con la participación de más de 300 estudiantes, la FEC realizó la
+                                                    primera brigada de rehabilitación y mejoramiento de espacios
+                                                    públicos.
                                                 </p>
+                                            </div>
+                                            <!-- para que modal funcione, data-target="#modall" de ".card-body img" = id="Modal1" de (div class="modal fade") -->
+                                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog"
+                                                aria-labelledby="eneroModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body ">
+                                                            <!-- img neceitad id para la db de su dirececion-->
+                                                            <img class="card-img-bottom mb-2 img-thumbnail"
+                                                                alt="Card image cap"
+                                                                src="http://federaciondeestudiantescolimenses.com/application/libraries/images/actividades/marzo/real/brigadasColima.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- card que solo muestra img en modal-->
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="card w-100">
                                             <div class="card-header">
-                                                <h6 class="card-title"> Anuncian alianza estratégica FEC, SEMS en el Estado y la DGETI.</h6>
+                                                <!-- h6 necesita de un id para la db-->
+                                                <h6 class="card-title text-center">
+                                                    A la comunidad universitaria, a la sociedad en general...
+                                                </h6>
                                             </div>
                                             <div class="card-body">
-                                                <a href="http://federaciondeestudiantescolimenses.com/notas/id/10">
-                                                    <img class="card-img-bottom mb-2 img-thumbnail" alt="Card image cap"
-                                                        src="http://federaciondeestudiantescolimenses.com/application/libraries/images/notas/thumbs/105.jpg">
-                                                </a>
+                                                <!-- para que modal funcione, data-target="#modall" de ".card-body img" = id="Modal1" de (div class="modal fade") -->
+                                                <!-- img neceitad id para la db de su dirececion-->
+                                                <img class="card-img-bottom mb-2 img-thumbnail" alt="Card image cap"
+                                                    src="http://federaciondeestudiantescolimenses.com/application/libraries/images/boletines/diciembre/thumbs/boletin1.jpg"
+                                                    data-toggle="modal" data-target="#modal2">
+
                                                 <p class="text-secondary">
-                                                    Esta mañana, Héctor Magaña Lara, Presidente de la FEC, Armando Barbosa Herrera...(
-                                                    <a class="text-info" href="http://federaciondeestudiantescolimenses.com/notas/id/10">Leer más</a>)
+                                                    Da clic en la imagen para leer el boletín.
                                                 </p>
+                                                <a href="http://federaciondeestudiantescolimenses.com/application/libraries/images/boletines/diciembre/real/boletin1.pdf"
+                                                    class="text-info"> Descargar</a>
+
+                                            </div>
+                                            <!-- para que modal funcione, data-target="#modall" de ".card-body img" = id="Modal1" de (div class="modal fade") -->
+                                            <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
+                                                aria-labelledby="eneroModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body ">
+                                                            <!-- img neceitad id para la db de su dirececion-->
+                                                            <iframe
+                                                                src="http://federaciondeestudiantescolimenses.com/application/libraries/images/boletines/diciembre/real/boletin1.pdf"
+                                                                class=" w-100" alt="Card image cap"
+                                                                frameborder="0"></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
-                            <div class="card-header" id="headingTwo">
+                            <div class="card-header" id="headingFebrero">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        data-target="#collapseFebrero" aria-expanded="false"
+                                        aria-controls="collapseFebrero">
                                         Febrero
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            <div id="collapseFebrero" class="collapse" aria-labelledby="headingFebrero"
                                 data-parent="#accordion">
-                                <div class="card-body">
+                                <div class=" row card-body">
+
+
                                 </div>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="headingTwo">
+                            <div class="card-header" id="headingMarzo">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseTres" aria-expanded="false" aria-controls="collapseTwo">
+                                        data-target="#collapseMarzo" aria-expanded="false"
+                                        aria-controls="collapseMarzo">
                                         Marzo
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTres" class="collapse" aria-labelledby="headingTwo"
+                            <div id="collapseMarzo" class="collapse" aria-labelledby="headingMarzo"
                                 data-parent="#accordion">
-                                <div class="card-body">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingAbril">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseAbril" aria-expanded="false"
+                                        aria-controls="collapseAbril">
+                                        Abril
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseAbril" class="collapse" aria-labelledby="headingAbril"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingMayo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseMayo" aria-expanded="false" aria-controls="collapseMayo">
+                                        Mayo
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseMayo" class="collapse" aria-labelledby="headingMayo"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingJunio">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseJunio" aria-expanded="false"
+                                        aria-controls="collapseJunio">
+                                        Junio
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseJunio" class="collapse" aria-labelledby="headingJunio"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingJulio">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseJulio" aria-expanded="false"
+                                        aria-controls="collapseJulio">
+                                        Julio
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseJulio" class="collapse" aria-labelledby="headingJulio"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingAgosto">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseAgosto" aria-expanded="false"
+                                        aria-controls="collapseAgosto">
+                                        Agosto
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseAgosto" class="collapse" aria-labelledby="headingAgosto"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSeptiembre">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseSeptiembre" aria-expanded="false"
+                                        aria-controls="collapseSeptiembre">
+                                        Septiembre
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSeptiembre" class="collapse" aria-labelledby="headingSeptiembre"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingOctubre">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseOctubre" aria-expanded="false"
+                                        aria-controls="collapseOctubre">
+                                        Octubre
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOctubre" class="collapse" aria-labelledby="headingOctubre"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingNoviembre">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseNoviembre aria-expanded=" false"
+                                        aria-controls="collapseNoviembre">
+                                        Noviembre
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseNoviembre" class="collapse" aria-labelledby="headingNoviembre"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingDiciembre">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseMarzo" aria-expanded="false"
+                                        aria-controls="collapseDiciembre">
+                                        Diciembre
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseDiciembre" class="collapse" aria-labelledby="headingDiciembre"
+                                data-parent="#accordion">
+                                <div class=" row card-body">
+
+
                                 </div>
                             </div>
                         </div>
@@ -216,8 +453,8 @@
                     </a>
                 </div>
                 <div class="mt-3">
-                    <img class="redes mt-1 mb-1" src="/img/instagram.png" alt="">
-                    <img class="redes mt-1 mb-1" src="/img/facebook.png" alt="">
+                    <img class="redes" src="/img/instagram.png" alt="">
+                    <img class="redes" src="/img/facebook.png" alt="">
                 </div>
                 <p class="card-text mt-3 mb-3">Federación de Estudiantes Colimenses 2017-2021</p>
                 <div class="text-muted mb-3">
