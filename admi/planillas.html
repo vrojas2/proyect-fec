@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand title" href="index.html">FEC</a>
+            <a class="navbar-brand title" href="inicio.html">FEC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -32,27 +32,40 @@
     </nav>
 
 
-    <div class="container main mt-5">
-        <main>
-            <h1 class="text-center">Inicio de sesión para administradores</h1>
+    <main>
+        <div class="container main mt-5">
+            <div class="jumbotron">
+                <h1 class="text-center">Planillas</h1>
+                <hr class="my-4">
+            </div>
             <form>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Cuenta</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <label for="exampleInputEmail1">Buscar</label>
+                    <input type="search" class="form-control" id="exampleInputEmail1" placeholder="Buscar...">
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Contraseña">
-                </div>
-                <div class="text-center">
-                    <a class="btn btn-primary" href="inicio.html">Entrar</a>
-                </div>
-                
+                <button type="submit" class="btn btn-primary">Aceptar</button>
             </form>
-        </main>
-    </div>
+
+            <div class="table-responsive mt-5">
+                <table class="table">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Colima</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td><a href="registroPlanilla.html" class="btn btn-warning">Editar</a></td>
+                        <td><a class="btn btn-danger">Eliminar</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+        </div>
+    </main>
 
 
 
