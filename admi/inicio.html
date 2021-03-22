@@ -2,263 +2,269 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEC</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand title" href="inicio.html">FEC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand title" href="inicio.html">FEC</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+  <div class="container main mt-5">
+    <main>
+      <div class="jumbotron">
+        <h1 class="display-4">Bienvenido a la admnistración de la página</h1>
+        <hr class="my-4">
+        <p>Esta es la sección para administradores donde podrá realizar distintas acciones sobre el sistema de la FEC
+        </p>
+        <a class="btn bg-danger text-white" href="/admi/login.html" >Cerrar sesión</a>
+      </div>
+
+      <div id="accordion">
+
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Usuarios
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá agregar, editar, eliminar, buscar y los usuarios administradores de la FEC.</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="usuarios.html">Ir</a>
+              </div>
             </div>
+          </div>
+
         </div>
-    </nav>
-
-
-    <div class="container main mt-5">
-        <main>
-            <div class="jumbotron">
-                <h1 class="display-4">Bienvenido a la admnistración de la página</h1>
-                <hr class="my-4">
-                <p>Esta es la sección para administradores donde podrá realizar distintas acciones sobre el sistema de la FEC</p>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Estudiantes
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá editar, eliminar, buscar y los usuarios registrados de la FEC.</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="alumnos.html">Ir</a>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div id="accordion">
-
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Usuarios
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>Podrá agregar, editar, eliminar, buscar y los usuarios administradores de la FEC.</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="usuarios.html">Ir</a>
-                        </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Alumnos
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>Podrá editar, eliminar, buscar y los usuarios registrados de la FEC.</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="alumnos.html">Ir</a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Escuelas
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>Podrá agregar, editar, eliminar, buscar y las escuelas que participen de la FEC.</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="escuelas.html">Ir</a>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" id="headingFourth">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
-                            Biblioteca
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Podrá agregar,editar, eliminar, buscar y los recursos que se encuentren dentro de la FEC</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="biblioteca.html">Ir</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingFifth">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
-                          Becas
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseFifth" class="collapse" aria-labelledby="headingFifth" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Podrá agregar, editar, eliminar, buscar las becas participantes de la FEC</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="becas.html">Ir</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingSixth">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
-                          Planilla
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseSixth" class="collapse" aria-labelledby="headingSixth" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Podrá editar, eliminar, buscar y las planillas registradas de la FEC</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="planillas.html">Ir</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingSeventh">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeventh" aria-expanded="false" aria-controls="collapseSeventh">
-                          Boletines
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseSeventh" class="collapse" aria-labelledby="headingSeventh" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Podrá agregar, editar, eliminar, buscar y los boletines participantes de la FEC</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="boletines.html">Ir</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="card">
-                    <div class="card-header" id="headingNineth">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNineth" aria-expanded="false" aria-controls="collapseNineth">
-                          Actividades
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseNineth" class="collapse" aria-labelledby="headingNineth" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Podrá agregar, editar, eliminar, buscar y las actividades de la FEC</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="actividades.html">Ir</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-header" id="headingTenth">
-                      <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTenth" aria-expanded="false" aria-controls="collapseTenth">
-                          Banner
-                        </button>
-                      </h5>
-                    </div>
-                    <div id="collapseTenth" class="collapse" aria-labelledby="headingTenth" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Podrá agregar, editar, eliminar, buscar y los banners participantes de la FEC</p>
-                        <div class="text-center">
-                            <a class="btn btn-primary" href="banner.html">Ir</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-                  
-                  
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Escuelas
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá agregar, editar, eliminar, buscar y las escuelas que participen de la FEC.</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="escuelas.html">Ir</a>
               </div>
+            </div>
+          </div>
+        </div>
 
-        </main>
+        <div class="card">
+          <div class="card-header" id="headingFourth">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourth"
+                aria-expanded="false" aria-controls="collapseFourth">
+                Biblioteca
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFourth" class="collapse" aria-labelledby="headingFourth" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá agregar,editar, eliminar, buscar y los recursos que se encuentren dentro de la FEC</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="biblioteca.html">Ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFifth">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFifth"
+                aria-expanded="false" aria-controls="collapseFifth">
+                Becas
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFifth" class="collapse" aria-labelledby="headingFifth" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá agregar, editar, eliminar, buscar las becas participantes de la FEC</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="becas.html">Ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingSixth">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSixth"
+                aria-expanded="false" aria-controls="collapseSixth">
+                Planilla
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSixth" class="collapse" aria-labelledby="headingSixth" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá editar, eliminar, buscar y las planillas registradas de la FEC</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="planillas.html">Ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingSeventh">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeventh"
+                aria-expanded="false" aria-controls="collapseSeventh">
+                Boletines
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSeventh" class="collapse" aria-labelledby="headingSeventh" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá agregar, editar, eliminar, buscar y los boletines participantes de la FEC</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="boletines.html">Ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingNineth">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNineth"
+                aria-expanded="false" aria-controls="collapseNineth">
+                Actividades
+              </button>
+            </h5>
+          </div>
+          <div id="collapseNineth" class="collapse" aria-labelledby="headingNineth" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá agregar, editar, eliminar, buscar y las actividades de la FEC</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="actividades.html">Ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTenth">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTenth"
+                aria-expanded="false" aria-controls="collapseTenth">
+                Banner
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTenth" class="collapse" aria-labelledby="headingTenth" data-parent="#accordion">
+            <div class="card-body">
+              <p>Podrá agregar, editar, eliminar, buscar y los banners participantes de la FEC</p>
+              <div class="text-center">
+                <a class="btn btn-primary" href="banner.html">Ir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+
+
+  <footer>
+
+    <div class="card text-center bg-light mt-5">
+      <div class="card-body">
+        <div class="enlaces">
+          <a href="#">
+            <h6 class="card-text">Arte y Cultura</h6>
+          </a>
+          <a href="#">
+            <h6 class="card-text">Siceuc</h6>
+          </a>
+          <a href="#">
+            <h6 class="card-text">Contacto</h6>
+          </a>
+        </div>
+        <div class="mt-3">
+          <img class="redes" src="/img/instagram.png" alt="">
+          <img class="redes" src="/img/facebook.png" alt="">
+        </div>
+        <p class="card-text mt-3">Federación de Estudiantes Colimenses 2017-2021</p>
+        <div class="text-muted">
+          <p>La Federación de Estudiantes Colimenses, utilizará sus datos personales aquí recabados para tener
+            los medios suficientes de comunicación y contacto con nuestros afiliados así como para coadyuvar
+            con las acciones realizadas por nuestra institución.</p>
+        </div>
+
+      </div>
     </div>
 
-
-
-    <footer>
-
-        <div class="card text-center bg-light mt-5">
-            <div class="card-body">
-                <div class="enlaces">
-                    <a href="#">
-                        <h6 class="card-text">Arte y Cultura</h6>
-                    </a>
-                    <a href="#">
-                        <h6 class="card-text">Siceuc</h6>
-                    </a>
-                    <a href="#">
-                        <h6 class="card-text">Contacto</h6>
-                    </a>
-                </div>
-                <div class="mt-3">
-                    <img class="redes" src="/img/instagram.png" alt="">
-                    <img class="redes" src="/img/facebook.png" alt="">
-                </div>
-                <p class="card-text mt-3">Federación de Estudiantes Colimenses 2017-2021</p>
-                <div class="text-muted">
-                    <p>La Federación de Estudiantes Colimenses, utilizará sus datos personales aquí recabados para tener
-                        los medios suficientes de comunicación y contacto con nuestros afiliados así como para coadyuvar
-                        con las acciones realizadas por nuestra institución.</p>
-                </div>
-
-            </div>
-        </div>
-
-    </footer>
+  </footer>
 
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
